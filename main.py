@@ -28,12 +28,12 @@ while True:
         try:
             user_input = input('Enter a choice ("R" for "rock", "P" for "paper", "S" for "scissors"): ')
             if user_input.upper() not in ('R', 'P', 'S'):
-                print('Wrong input, try again')
+                print('Wrong input, please try again')
             else:
                 break
 
         except ValueError:
-            print('Wrong input, try again')
+            print('Wrong input, please try again')
             continue
 
     possible_actions = ["R", "P", "S"]
@@ -50,5 +50,5 @@ while True:
         continue
     else:
         if play_again.lower() != "y":
-            print("Thank you for playing")
+            print("Thank you for playing!")
             break
